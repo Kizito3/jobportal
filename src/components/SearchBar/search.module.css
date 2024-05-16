@@ -34,8 +34,8 @@
     }
     .selectFlex select{
         width: 100%;
-        padding-block: 1rem;
-    padding-inline: 1rem;
+        padding-block: 1rem !important;
+        padding-inline: 1rem !important;
     }
     .container{
         width: 88%;
