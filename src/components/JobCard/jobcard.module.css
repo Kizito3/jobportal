@@ -67,7 +67,9 @@
     border: 1px solid #000;
     color: #000;
 }
-
+.margin{
+    margin-bottom: 2rem;
+}
 @media (max-width: 1024px) {
     .container{
         width: 88%;
@@ -109,7 +111,22 @@
         padding-inline: 0.1rem;
         margin-bottom: 2rem;
         /* border: none; */
+        font-size: 0.7rem;
+    }
+    .JobCardDetails p{
         font-size: 0.9rem;
+    }
+    .AllFlex{
+        width: 100%;
+    }
+}
+
+@media(max-width: 390px){
+    .JobCardDetails span{
+        padding-inline: 0.1rem;
+        margin-bottom: 2rem;
+        /* border: none; */
+        font-size: 0.7rem;
     }
     .JobCardDetails p{
         font-size: 0.9rem;

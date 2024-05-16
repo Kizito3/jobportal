@@ -41,3 +41,19 @@
         width: 88%;
     }
 }
+
+@media (max-width:414px){
+    .selectFlex select{
+        width: 100%;
+        padding-block: 1rem !important;
+        padding-inline: 1rem !important;
+    }
+}
+
+@media (max-width:344px){
+    .selectFlex select{
+        width: 100%;
+        padding-block: 1rem !important;
+        padding-inline: 1rem !important;
+    }
+}

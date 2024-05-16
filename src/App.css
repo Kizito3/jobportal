@@ -8,9 +8,27 @@
     max-width: 1800px;
     margin-inline: auto;
 }
-
+.container2{
+    width: 74%;
+    max-width: 1800px;
+    margin-inline: auto;
+}
 @media (max-width:1024px) {
     .container{
         width: var(--container-width-md);
     }
+}
+
+.btn{
+    width: 8rem;
+    background: #000;
+    padding-block: 0.4rem;
+    padding-inline: 0.8rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    transition:  all .50s ease-in-out;
 }

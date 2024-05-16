@@ -7,7 +7,8 @@ export default function JobCard({postedOn,title,skills,company,type,experience,l
     const date1 = dayjs(Date.now());
     const diffInDays = date1.diff(postedOn, "days");
   return (
-    <div className={classes.container}>
+   <section className={classes.margin}>
+     <div className={classes.container}>
       <div className={classes.AllFlex}>
         <div className={classes.JobCardBg}>
           <div className={classes.JobCardFlex}>
@@ -19,7 +20,7 @@ export default function JobCard({postedOn,title,skills,company,type,experience,l
               ))}
             </div>
             <div className={classes.JobCardBtn}>
-              <span>Posted {diffInDays} days ago</span>
+              <span>Posted {diffInDays > 1 ? `${diffInDays} days` : `${diffInDays} day`} ago</span>
 
              <a href={job_link} target={target}> <button>Apply</button></a>
             </div>
@@ -27,5 +28,6 @@ export default function JobCard({postedOn,title,skills,company,type,experience,l
         </div>
       </div>
     </div>
+   </section>
   );
 }
