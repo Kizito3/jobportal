@@ -1,0 +1,120 @@
+.container{
+    width: 74%;
+    max-width: 1800px;
+    margin-inline: auto;
+}
+.AllFlex{
+    max-width: 1700px;
+    margin-inline: auto;
+    width: 80%;
+    margin-top: 2.5rem;
+}
+.JobCardBg{
+    background: #fff;
+    padding-inline: 2rem;
+    padding-block: 1.2rem;
+    border-radius: 6px;
+}
+
+.JobCardFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.JobCardDetails h4{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.JobCardDetails p{
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.JobCardDetails span{
+    background: transparent;
+    border: 1px solid #000000;
+    border-radius: 0.375rem;
+    padding-block: 0.4rem;
+    padding-inline: 0.8rem;
+    margin-left: 0.4rem;
+}
+
+.JobCardBtn {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.JobCardBtn button{
+    width: 8rem;
+    background: #000;
+    padding-block: 0.4rem;
+    padding-inline: 0.8rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    transition:  all .50s ease-in-out;
+}
+
+.JobCardBtn button:hover{
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+}
+
+@media (max-width: 1024px) {
+    .container{
+        width: 88%;
+    }
+
+    .JobCardFlex{
+        flex-direction: column;
+    }
+    .AllFlex{
+        width: 100%;
+    }
+    .JobCardDetails span{
+        padding-inline: 0.2rem;
+        margin-bottom: 2rem;
+    }
+    .JobCardDetails p{
+        margin-bottom: 1.5rem;
+    }
+    .JobCardBtn{
+        margin-block: 1.5rem;
+    }
+    .JobCardBtn span{
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+    .JobCardDetails span{
+        padding-inline: 0.2rem;
+        margin-bottom: 2rem;
+    }
+    .AllFlex{
+        width: 100%;
+    }
+}
+
+@media(max-width: 344px){
+    .JobCardDetails span{
+        padding-inline: 0.1rem;
+        margin-bottom: 2rem;
+        /* border: none; */
+        font-size: 0.9rem;
+    }
+    .JobCardDetails p{
+        font-size: 0.9rem;
+    }
+    .AllFlex{
+        width: 100%;
+    }
+}

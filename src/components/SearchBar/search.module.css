@@ -1,0 +1,41 @@
+.container{
+    width: 74%;
+    max-width: 1800px;
+    margin-inline: auto;
+}
+.selectFlex{
+    display: flex;
+    gap: 2rem;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectFlex select{
+    width: 16rem;
+    padding-block: 0.8rem;
+    padding-inline: 0.8rem;
+    border-radius:  0.375rem;
+    outline: none;
+}
+
+.btn{
+    width: 16rem;
+    background: #000;
+    color: #fff;
+    padding-block: 0.8rem;
+    padding-inline: 0.8rem;
+    border-radius: 0.375rem;
+}
+@media (max-width: 1024px) {
+    .selectFlex{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .selectFlex select{
+        width: 100%;
+    }
+    .container{
+        width: 88%;
+    }
+}

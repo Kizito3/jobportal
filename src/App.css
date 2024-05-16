@@ -1,0 +1,16 @@
+:root{
+    --container-width-lg: 74%;
+    --container-width-md: 80%;
+}
+
+.container{
+    width: var(--container-width-lg);
+    max-width: 1800px;
+    margin-inline: auto;
+}
+
+@media (max-width:1024px) {
+    .container{
+        width: var(--container-width-md);
+    }
+}
